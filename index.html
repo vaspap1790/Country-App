@@ -20,27 +20,25 @@
 
 
 
-    <div class="jumbotron">
-        <h1 class="display-4">Country-App</h1>
-        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium fuga dignissimos, libero
-            esse illum quo pariatur repellendus tempore. Earum, fuga?</p>
-        <hr class="my-4">
-
+    <div class="container bg-light border shadow p-5">
+        <h2><i class="fas fa-globe-americas"></i>Country-App</h2>
+        <p class="lead">This is an application which displays country information</p>
+        <hr>
         <div class="d-flex d-row">
-            <input type="text">
+            <input type="text" id="country" placeholder="Enter country name, e.g. Greece" size="30" class="mr-1">
             <a class="btn btn-primary btn-sm" href="#" role="button">Get Info</a>
         </div>
         <hr class="my-4">
-        <p>Powered by <a href="">Rest Countries API</a></p>
+        <p>Created with love <i class="fas fa-heart"></i> by the CB8 Java Part Class</p>
     </div>
 
-    <div class="container-fluid mx-3">
+    <div class="container bg-dark border shadow p-5 mt-4">
         <div class="row">
             <div class="col-8">
                 <div id="map" class="map"></div>
 
             </div>
-            <div class="col-4"></div>
+            <div class="col-3" id="map-offset"></div>
 
         </div>
 
