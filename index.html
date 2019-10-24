@@ -12,7 +12,8 @@
         href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.0.1/css/ol.css" type="text/css">
     <title>Country-App</title>
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.0.1/build/ol.js"></script>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,14 +25,27 @@
         <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium fuga dignissimos, libero
             esse illum quo pariatur repellendus tempore. Earum, fuga?</p>
         <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
+
+        <div class="d-flex d-row">
+            <input type="text">
+            <a class="btn btn-primary btn-sm" href="#" role="button">Get Info</a>
+        </div>
+        <hr class="my-4">
+        <p>Powered by <a href="">Rest Countries API</a></p>
     </div>
 
+    <div class="container-fluid mx-3">
+        <div class="row">
+            <div class="col-8">
+                <div id="map" class="map"></div>
 
-    <div id="map" class="map"></div>
+            </div>
+            <div class="col-4"></div>
+
+        </div>
+
+    </div>
+
 
 
 
