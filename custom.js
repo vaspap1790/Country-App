@@ -1,5 +1,5 @@
-
-function success(position) {
+// Map
+function successMap(position) {
     console.log(position);
     var map = new ol.Map({
         target: 'map',
@@ -14,13 +14,37 @@ function success(position) {
         })
     });
 }
-function error(error) {
+
+function errorMap(error) {
     console.log(error);
 }
 
 if (navigator.geolocation) {
     console.log("ok");
-    navigator.geolocation.getCurrentPosition(success, error);
+    navigator.geolocation.getCurrentPosition(successMap, errorMap);
 } else {
     console.log("not ok");
 }
+
+
+// AJAX
+
+const URL = "";
+
+function handleResponse(response) {
+    return response.json();
+};
+
+function successAPI(data) {
+    console.log(data);
+
+};
+
+function errorAPI(error) {
+    console.log(error);
+};
+
+fetch(URL)
+    .then(handleResponse)
+    .then(successAPI)
+    .catch(errorAPI);
